@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CS Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+            color: #e2e8f0;
+            padding: 2rem 1rem;
+        }
+        .container { max-width: 1000px; margin: 0 auto; }
+        .card {
+            background: rgba(30, 41, 59, 0.5);
+            backdrop-filter: blur(10px);
+            border-radius: 1.5rem;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: transform 0.2s;
+        }
+        .card:hover { transform: translateY(-4px); }
+        .profile-info h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #c084fc, #60a5fa);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #334155;
+            padding: 0.25rem 1rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+        }
+        .skills-grid { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1rem; }
+        .skill-chip {
+            background: linear-gradient(135deg, #4f46e5, #7c3aed);
+            padding: 0.5rem 1.25rem;
+            border-radius: 9999px;
+            font-weight: 500;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            font-weight: 600;
+            text-decoration: none;
+            background: linear-gradient(135deg, #8b5cf6, #d946ef);
+            color: white;
+        }
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            border-left: 4px solid #8b5cf6;
+            padding-left: 1rem;
+        }
+        .contact-links { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1rem; }
+        .contact-link { color: #94a3b8; text-decoration: none; }
+        .contact-link:hover { color: #c084fc; }
+        .footer { text-align: center; padding: 2rem 0; color: #64748b; font-size: 0.875rem; }
+        @media (max-width: 640px) { .card { padding: 1.5rem; } }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="card">
+        <div class="profile-info">
+            <h1>[Your Name]</h1>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.75rem 0;">
+                <span class="badge"><i class="fas fa-map-marker-alt"></i> Rawalpindi, Pakistan</span>
+                <span class="badge"><i class="fas fa-graduation-cap"></i> BS CS, FJWU</span>
+                <span class="badge"><i class="fas fa-code"></i> 4th Semester</span>
+            </div>
+            <p>Passionate about technology, ethical software design, and building impactful solutions. Currently working on my capstone project.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="section-title"><i class="fas fa-user"></i> About Me</div>
+        <p>I'm a 4th-semester Computer Science student at Fatima Jinnah Women University (FJWU), Rawalpindi. I love solving problems and learning new technologies.</p>
+        <p>📍 Location: Rawalpindi, Pakistan<br>🎓 Status: BS CS Student | Semester 4<br>💡 Interests: Web Development, AI, Cyber Law</p>
+    </div>
+
+    <div class="card">
+        <div class="section-title"><i class="fas fa-cogs"></i> Technical Skills</div>
+        <div class="skills-grid">
+            <span class="skill-chip">C</span>
+            <span class="skill-chip">C++</span>
+            <span class="skill-chip">Java & Python (Learning)</span>
+            <span class="skill-chip">HTML/CSS</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="section-title"><i class="fas fa-gavel"></i> Featured Project</div>
+        <p><strong>PECA Law in Pakistan – Effectiveness and Challenges</strong></p>
+        <p>A technical and ethical analysis of Pakistan's cybercrime law.</p>
+        <div style="margin-top: 1rem;">
+            <a href="project.md" class="btn"><i class="fas fa-file-alt"></i> Read Full Analysis</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="section-title"><i class="fas fa-paper-plane"></i> Let's Connect</div>
+        <div class="contact-links">
+            <a href="#" class="contact-link"><i class="fab fa-github"></i> GitHub</a>
+            <a href="#" class="contact-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="#" class="contact-link"><i class="fas fa-envelope"></i> Email</a>
+        </div>
+    </div>
+
+    <div class="footer">© 2026 [Your Name] | Built for Capstone Project</div>
+</div>
+</body>
+</html>
